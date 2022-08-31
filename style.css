@@ -1,0 +1,133 @@
+@import url();
+
+body {
+  background: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 64px 16px 8px;
+  gap: 10px;
+}
+
+/******/
+.title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 130%;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.hidden-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 130%;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.hidden-text.hidden {
+  display: none;
+}
+
+.read-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #ffffff;
+  width: 54px;
+  height: 14px;
+}
+
+.btn-png {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px 10px 0px;
+  gap: 8px;
+  width: 94px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.img-bottom {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: flex-start;
+    padding: 64px 64px;
+    gap: 64px;
+    width: 1440px;
+    height: 608px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 512px;
+    height: 480px;
+  }
+
+  .img-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 736px;
+    height: 480px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .title {
+    font-size: 33px;
+  }
+
+  .read-text {
+    width: 103px;
+    height: 16.9px;
+    font-size: 13px;
+  }
+}
